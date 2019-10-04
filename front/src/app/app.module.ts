@@ -1,0 +1,19 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { TimerModule } from './timers/timer.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+@NgModule({
+	declarations: [AppComponent],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		TimerModule,
+		BrowserAnimationsModule,
+	],
+	providers: [],
+	bootstrap: [AppComponent]
+})
+export class AppModule {}

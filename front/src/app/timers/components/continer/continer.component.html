@@ -1,0 +1,12 @@
+
+<div>
+    <div *ngIf="loading"  class="preloader">
+        <div class="loader"></div>
+    </div>
+    <div class="container">
+    <app-butons (submit)="getTimes($event)"></app-butons>
+        <div class="result">
+    <app-inputs *ngIf="timers" [timer]="timers"></app-inputs>
+        </div>
+</div>
+</div>
